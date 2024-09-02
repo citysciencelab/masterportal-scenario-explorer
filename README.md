@@ -24,6 +24,8 @@ Create an `.env` file with the necessary environment variables. You can use a co
 
 The urban-model-platform needs to be checked out with the `dev` branch.
 
+The scenario-explorer-portalconfig can optionally be checked out with the `local-test` branch which will make all processes visible.
+
 ### Start the development environment:
 
 ```sh
