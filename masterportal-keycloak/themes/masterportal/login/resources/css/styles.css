@@ -1,0 +1,115 @@
+.login-pf body {
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif, Roboto;
+  position: relative;
+  padding: 10px;
+
+  @media(min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media(min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media(min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media(min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media(min-width: 1400px) {
+    max-width: 1320px;
+  }
+}
+
+.login-pf-page {
+  color: black;
+}
+
+.card-pf .login-pf-header {
+  display: none;
+}
+
+.pf-c-form-control {
+  border-radius: 10px;
+}
+
+#kc-header-wrapper {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: none;
+  text-align: left;
+  padding: 2%;
+}
+
+.pf-c-button.pf-m-primary {
+  background-color: #d6e3ff;
+  color: #001b3d;
+  border-radius: 10px;
+  /* margin-top: 50px; */
+}
+
+#kc-form {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px;
+  border: 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-horizontal {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px;
+  border: 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+#kc-info {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px;
+  border: 0px;
+  width: 100%;
+  /* This has to be set to !important since keycloak sets a margin on the same class */
+  margin-left: 0px !important;
+}
+
+.login-pf-page .login-pf-signup a {
+  /* This has to be set to !important since keycloak sets a margin on the same class */
+  margin-left: 0px !important;
+}
+#kc-form-options {
+  padding-top: 5px;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: center;
+}
+
+.forgot-password a {
+  color: #72767b;
+}
+
+.form-group-checkbox {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.checkbox-container, a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.checkbox-label {
+  font-weight: normal;
+  margin-left: 5px;
+  vertical-align: top;
+}

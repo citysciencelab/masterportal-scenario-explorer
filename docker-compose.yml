@@ -33,6 +33,7 @@ services:
       - 5555:5432
   api:
     container_name: ump-api
+    env_file: .env
     build:
       context: ${UMP_DIRECTORY}
       dockerfile: Dockerfile.dev
@@ -79,3 +80,5 @@ services:
     depends_on:
       - postgis
     command: ['start', '--proxy-headers', 'xforwarded', '--http-enabled', 'true']
+    volumes:
+      - ./masterportal-keycloak/themes/masterportal:/opt/keycloak/themes/masterportal
