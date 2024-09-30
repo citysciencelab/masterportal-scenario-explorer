@@ -65,7 +65,7 @@ RUN echo "Current directory:" && pwd
 RUN echo "$(pwd && ls -lah)"
 
 COPY --from=build /masterportal/dist /usr/share/nginx/html/portal
-RUN mv /usr/share/nginx/html/portal/mastercode/*/* /usr/share/nginx/html/
+RUN cp -r /usr/share/nginx/html/portal/mastercode/*/* /usr/share/nginx/html/
 
 EXPOSE 80
 
