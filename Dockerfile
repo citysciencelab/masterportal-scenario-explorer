@@ -1,4 +1,4 @@
-ARG MP_VERSION=3.1.0
+ARG MP_VERSION=v3.1.0
 ARG ADDONS_TAG=main
 ARG PORTAL_TAG=main
 # TODO: readd this argument
@@ -6,6 +6,10 @@ ARG PORTAL_TAG=main
 
 # build stage
 FROM node:20-alpine AS build
+
+ARG MP_VERSION
+ARG ADDONS_TAG
+ARG PORTAL_TAG
 
 # libs needed to build the masterportal
 RUN apk update && apk add --no-cache --virtual .gyp \
@@ -30,6 +34,7 @@ RUN rm -rf addons && git add .
 RUN git submodule add https://github.com/citysciencelab/scenario-explorer-addon.git addons
 WORKDIR /masterportal/addons
 RUN git checkout ${ADDONS_TAG}
+RUN for file in $(ls -d */); do cd $file; if (test -f package.json); then npm i; fi; cd ..; done
 
 # get the portal config
 WORKDIR /masterportal
