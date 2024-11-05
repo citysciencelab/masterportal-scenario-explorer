@@ -1,4 +1,4 @@
-# masterportal-scenario-explorer
+# Scenario Explorer and Urban Model Platform Overview Repo
 
 This repo is the link between the [urban-model-platform](https://github.com/citysciencelab/urban-model-platform) and the [scenario-explorer](https://github.com/citysciencelab/scenario-explorer-addon).
 
