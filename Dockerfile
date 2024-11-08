@@ -1,4 +1,4 @@
-ARG MP_VERSION=v3.1.0
+ARG MP_VERSION=v3.4.0
 ARG ADDONS_TAG=main
 ARG PORTAL_TAG=local-test
 # TODO: readd this argument
