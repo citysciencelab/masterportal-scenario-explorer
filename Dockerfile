@@ -1,6 +1,6 @@
 ARG MP_VERSION=v3.4.0
-ARG ADDONS_TAG=main
-ARG PORTAL_TAG=local-test
+ARG ADDONS_TAG=dev-server-setup
+ARG PORTAL_TAG=dev-server-setup
 # TODO: readd this argument
 #ARG PORTAL_NAME=simulation
 
